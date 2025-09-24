@@ -1,0 +1,21 @@
+{
+    "version": "0.1.0",
+    "description": "A command-line tool to play YouTube videos in mpv.",
+    "homepage": "https://github.com/mustafachyi/mpv-yt-dotnet",
+    "license": "GPL 3.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/mustafachyi/mpv-yt-dotnet/releases/download/v0.1.0/play-win-x64.zip",
+            "hash": "sha256:73380a9873410ca7d03ee13f65bb2de1b0942654716f5b9509562337889c51b7"
+        }
+    },
+    "bin": "play.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/mustafachyi/mpy-yt-dotnet/releases/download/v$version/play-win-x64.zip"
+            }
+        }
+    }
+}
