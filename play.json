@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/mustafachyi/mpv-yt-dotnet/releases/download/v0.1.0/play-win-x64.zip",
-            "hash": "sha256:73380a9873410ca7d03ee13f65bb2de1b0942654716f5b9509562337889c51b7"
+            "hash": "sha256:4488c20d5f769c4bc301a3e58be02d3ddd4be7c8d61c8f4219c877ce16a752f2"
         }
     },
     "bin": "play.exe",
