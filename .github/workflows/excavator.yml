@@ -1,0 +1,19 @@
+name: Excavator
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  excavate:
+    name: Excavate
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: scoop-installer/github-action@v2
+        with:
+          bucket: "."
