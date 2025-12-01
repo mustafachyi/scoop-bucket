@@ -14,6 +14,6 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: scoop-installer/github-action@v2
+      - uses: ScoopInstaller/GithubActions@main
         with:
           bucket: "."
