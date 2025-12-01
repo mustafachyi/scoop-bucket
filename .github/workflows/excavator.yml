@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  issues: write
+  pull-requests: write
 
 jobs:
   excavate:
@@ -15,5 +17,5 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ScoopInstaller/GithubActions@main
-        with:
-          bucket: "."
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
